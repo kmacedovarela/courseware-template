@@ -1,7 +1,12 @@
-* xref:01-setup.adoc[1. Setup]
-** xref:01-setup.adoc#prerequisite[Prerequisites]
-** xref:01-setup.adoc#minikube[Setup Minikube]
+* xref:01-pattern.adoc[1. Solution Pattern: Solution Pattern Template Title]
+** xref:01-pattern.adoc#background[Background]
 
-* xref:02-deploy.adoc[2. Deploy Service]
-** xref:02-deploy.adoc#package[Build Service]
-** xref:02-deploy.adoc#deploy[Deploy Dervice]
+* xref:02-architecture.adoc[2. Architecture]
+** xref:02-architecture.adoc#in-depth-description[In depth description]
+** xref:02-architecture.adoc#technology-stack[Technology stack]
+
+* xref:03-demo.adoc[3. Demonstration of this solution]
+** xref:03-demo.adoc#demo-video[Watch a demonstration]
+** xref:03-demo.adoc#demo-walthough[Demonstration walkthrough guide]
+
+* https://redhat-solution-patterns.github.io/[Other Red Hat Solution Patterns]

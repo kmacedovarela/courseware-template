@@ -1,1 +1,28 @@
-Check the build courseware https://redhat-scholars.github.io/build-course[documentation]  on how folder structure, how to use macros and other gotchas
+== Solution patterns site template 
+
+This is a template used to generate new solution pattern pages with the same look and feel of the existing solution patterns and https://redhat-solution-patterns.github.io/[main page] .
+
+=== How to create a new solution pattern page
+
+To create a new solution pattern page:
+
+. Access to https://redhat-solution-patterns.github.io/courseware-template;
+. Click on the `Use this template` green button;
+. Type the name of your new sp, e.g. "solution-pattern-xy-z".
+* It's recommended that you are the owner of the repository during the initial phases of development;
+. Click on the `Create repository from template` green button
+You should have a new repository with the required files and configurations to get started with content development.
+
+=== How to add my new solution pattern to the top menu
+
+To have your solution pattern listed in the top menu, please open a new issue in
+https://github.com/redhat-solution-patterns/course-ui/issues[this project: https://github.com/redhat-solution-patterns/course-ui/issues].
+
+Make sure to inform:
+
+* Short title
+* Main category (if appropriate). e.g. "Application modernization", "Edge", etc.
+
+=== Learn more
+
+This template is based on the Red Hat Developers scholars courseware template. To learn more, check the build courseware https://redhat-scholars.github.io/build-course[documentation]  on how folder structure, how to use macros and other gotchas.
