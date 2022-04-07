@@ -6,7 +6,7 @@ This is a template used to generate new solution pattern pages with the same loo
 
 To create a new solution pattern page:
 
-. Access to https://redhat-solution-patterns.github.io/courseware-template;
+. Access to https://github.com/redhat-solution-patterns/courseware-template;
 . Click on the `Use this template` green button;
 . Type the name of your new sp, e.g. "solution-pattern-xy-z".
 * It's recommended that you are the owner of the repository during the initial phases of development;
