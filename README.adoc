@@ -15,7 +15,7 @@ What's in this doc:
 
 To create a new solution pattern page:
 
-. Access to https://redhat-solution-patterns.github.io/courseware-template;
+. Access to https://github.com/redhat-solution-patterns/courseware-template;
 . Click on the `Use this template` green button;
 . Type the name of your new sp, e.g. "solution-pattern-xy-z".
 * It's recommended that you are the owner of the repository during the initial phases of development;
@@ -116,10 +116,6 @@ While this command is running, any changes you make to the source files will be 
 
 Press `[Ctrl+C]` to stop the preview server and end the continuous build.
 
-=== Learn more
-
-This template is based on the Red Hat Developers scholars courseware template. To learn more, check the build courseware https://redhat-scholars.github.io/build-course[documentation]  on how folder structure, how to use macros and other gotchas.
-
 === How to add my new solution pattern to the main page menu
 
 To have your solution pattern listed in the top menu, please open a new issue in
@@ -129,3 +125,7 @@ Make sure to inform:
 
 * Short title
 * Main category (if appropriate). e.g. "Application modernization", "Edge", etc.
+
+=== Learn more
+
+This template is based on the Red Hat Developers scholars courseware template. To learn more, check the build courseware https://redhat-scholars.github.io/build-course[documentation]  on how folder structure, how to use macros and other gotchas.
