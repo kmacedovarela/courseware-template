@@ -1,0 +1,124 @@
+<!-- Google tag (gtag.js) -->
+
+<!-- 
+  replace this with Google tag content 
+-->
+
+<!-- Google tag (gtag.js) -->
+<header class="header">
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const userId = urlParams.get('USERID');
+      const subdomain = urlParams.get('SUBDOMAIN');
+      if (userId) {
+        showUserId(userId, subdomain);
+      }
+      else {
+        showUserIdForm(subdomain);
+      }
+    });
+
+
+    function showUserId(userId, subdomain) {
+      document.getElementById('navbar-form-empty').style.display = "none";
+      document.getElementById('navbar-form-filled').style.display = "flex";
+      document.getElementById('userIdDisplay').textContent = "User ID : " + userId;
+      document.getElementById('subdomainDisplay').textContent = "Subdomain : " + subdomain;
+    }
+
+    function showUserIdForm(subdomain) {
+      document.getElementById('navbar-form-empty').style.display = "flex";
+      document.getElementById('navbar-form-filled').style.display = "none";
+      document.getElementById('subdomain').value = subdomain;
+
+    }
+
+    function goWithUserId() {
+      elUserIdInput = document.getElementById('userId');
+      elSubdomainInput = document.getElementById('subdomain');
+      window.location.search = ('&USERID=' + elUserIdInput.value + '&SUBDOMAIN=' + elSubdomainInput.value);
+    }
+
+    function recycle() {
+      document.getElementById('userId').value = '';
+      document.getElementById('subdomain').value = '';
+      window.location.search = ('');
+    }
+  </script>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" style="font-size: 20px; color: white"
+        href="{{{or site.url (or siteRootUrl siteRootPath)}}}">
+        <img src="{{uiRootPath}}/img/logo.png" height="35px" alt="Solution Patterns">&nbsp; {{site.title}}</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+      </button>
+    </div>
+    
+    <div class="navbar-item"><span class="navbar-text"
+        style="color: white; margin-left: 1rem; margin-right: 1rem;">|</span></div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link" href="#" style="color: white">Architectures &amp; Patterns</a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item" href="https://www.redhat.com/architect/portfolio/" target="_blank">Portfolio Architecture&nbsp; </a>
+        <a class="navbar-item" href="https://redhat-solution-patterns.github.io/solution-patterns/patterns.html" target="_blank">Solution Patterns </a>
+        <a class="navbar-item" href="https://validatedpatterns.io/" target="_blank">Validated Patterns&nbsp;</a>
+        <a class="navbar-item" href="https://catalog.redhat.com/solutions" target="_blank">Ecosystem Solutions&nbsp;</a>
+      </div>
+    </div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link" href="#" style="color: white">Resources</a>
+      <div class="navbar-dropdown">
+        <a class="navbar-item" target="_blank" href="https://developers.redhat.com">Red Hat Developers</a>
+        <a class="navbar-item" target="_blank" href="https://developers.redhat.com/app-dev-platform">App Dev Platform</a>
+        <a class="navbar-item" target="_blank" href="https://www.redhat.com/en/products/application-foundations">Red Hat Application Services</a>
+      </div>
+    </div>
+
+
+
+    <a class="navbar-item" style="color: white" target="_blank" href="https://github.com/redhat-solution-patterns/redhat-solution-patterns.github.io/issues">Feedback</a>
+
+    <a class="navbar-item" style="color: white" target="_blank" href="https://redhat-solution-patterns.github.io/solution-patterns/contributors-guide.html">Contribute</a>
+
+    <!--
+      uncomment if you want env variables to be replace
+
+    <div class="navbar-item"><span class="navbar-text"
+        style="color: white; margin-left: 1rem; margin-right: 1rem;">|</span></div>
+
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item" id="navbar-form-empty">
+          <span class="navbar-text" style="margin-left: 2rem;">
+            <span class="navbar-text" style="margin-left: 1rem; margin-right: 1rem;">&nbsp;<i style="color: orange;"
+                class="fa fa-exclamation-triangle" aria-hidden="true"></i></span>
+                Your Workshop Environment
+            <form action="javascript:void(0);" onsu>
+              <input size="20" id="userId" type="text" placeholder="USER ID">
+              <input size="20" id="subdomain" type="text" placeholder="Subdomain">
+              <button type="hidden" onclick="goWithUserId();">Set</button>
+            </form>
+        </div>
+
+        <div class="navbar-item" id="navbar-form-filled" style="display: none;">
+          <span class="navbar-text" style="margin-left: 2rem;">
+            <span class="navbar-text " style="margin-left: 1rem; margin-right: 1rem; float:left">
+              &nbsp;Your Workshop Environment 
+              <span class="navbar-text" style="margin-left: 1rem; margin-right: 1rem;">
+                  &nbsp;<i alt="Clear details" title="Clear details" onclick="recycle();" style="color: green;" class="fa fa-recycle" aria-hidden="true"></i>
+                <br>
+                <span id="userIdDisplay"></span> 
+                <span style="color: white; margin-left: 1rem; margin-right: 1rem;">|</span>
+                <span id="subdomainDisplay"></span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>-->
+  </nav>
+</header>

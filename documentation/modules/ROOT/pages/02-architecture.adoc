@@ -13,11 +13,12 @@ Introduction for the architecture of this solution pattern.
 == Technology Stack
 
 // Change links and text here as you see fit.
-* https://www.redhat.com/en/technologies/cloud-computing/openshift[Red Hat OpenShift]
-* Red Hat Application Foundation
-** https://access.redhat.com/products/quarkus[Quarkus]
-** https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-streams-for-apache-kafka[Kafka Streams]
-* Other:
+* Red Hat supported products
+** https://www.redhat.com/en/technologies/cloud-computing/openshift[Red Hat OpenShift]
+** Red Hat Application Foundation
+*** https://access.redhat.com/products/quarkus[Quarkus]
+*** https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-streams-for-apache-kafka[Kafka Streams]
+* Other open source products:
 ** https://www.postgresql.org/[PostgreSQL database]
 ** https://helm.sh/[Helm]
 
@@ -26,6 +27,76 @@ Introduction for the architecture of this solution pattern.
 == An in-depth look at the solution's architecture
 
 Technical description including all or some of the following: architecture ir ed diagrams. In-depth details of the decisions made and solutions used. Description of each service and what it is used for. Description of any integration.
+
+=== Using images 
+
+image::red_hat_open-hybrid-cloud.png[width=30%]
+
+{empty}
+
+=== Embedding HTML
+
+++++
+  <br>
+  <h3> Embed HTML by surrounding it with with four +s before and after. </h3>
+  <span>View the ascii doc to learn more</span>
+  <br> 
+++++
+
+
+=== Different decorators
+
+[TIP]
+====
+This is a Tip
+====
+
+[NOTE]
+====
+This is a NOTE
+====
+
+[WARNING]
+====
+This is a WARNING
+====
+
+[IMPORTANT]
+====
+This is IMPORTANT
+====
+
+
+=== Creating  tables
+ 
+[cols="1a,1a,1a"]
+|===
+| *Column A*  | Column *A* | _Column C_
+|
+* Lorem Ipsum
+* Lorem Ipsum
+
+|
+* Lorem Ipsum
+* Lorem Ipsum
+
+|
+* Lorem Ipsum
+* Lorem Ipsum
+|===
+
+
+
+=== Content that can be copied
+
+Click below to copy the content
+[.console-input]
+[source,shell script]
+----
+oc version #openshift cli client
+oc login --token=<token> --server=<server>
+----
+
 
 [#more_tech]
 == About the Technology Stack

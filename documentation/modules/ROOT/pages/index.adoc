@@ -6,8 +6,17 @@
 
 A brief introduction of this solution pattern.
 
-include::content-overview.adoc[]
+_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum_
 
+*Contributors:* _Your Name(s) here (can add links to your profile)_
+
+++++
+ <br>
+++++
+[NOTE]
+====
+Solutions Patterns help you understand the art of the possible with Red Hat's portfolio, and not intended to be used as is for production environments. You are welcome use any part of this solution pattern for your own workloads.
+====
 [#use-cases]
 == Use cases
 
@@ -17,6 +26,3 @@ Common use cases that can be address with this architecture are:
 - xyz
 
 include::01-pattern.adoc[]
-
-== Explore more solution patterns
-include::https://raw.githubusercontent.com/redhat-solution-patterns/redhat-solution-patterns.github.io/master/documentation/modules/ROOT/pages/solution-pattern-list.adoc[]
